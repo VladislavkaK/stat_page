@@ -40,7 +40,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
+  gem 'capybara'
   gem 'selenium-webdriver'
 end
 
