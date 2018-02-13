@@ -12,6 +12,8 @@ gem 'bootstrap-sass'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'mysql2'
+gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -38,6 +40,8 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
   gem 'factory_girl_rails', '4.2.1'
   gem 'sqlite3'
   gem 'rspec-rails'
